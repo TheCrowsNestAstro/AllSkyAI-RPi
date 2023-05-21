@@ -1,5 +1,0 @@
-clear
-heavy_clouds
-light_clouds
-not_running
-precipitation
