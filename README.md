@@ -41,7 +41,7 @@ Wait for the result:
 {"classification": "light_clouds", "confidence": 95.853, "utc": 1684667437, "inference": 0.661}
 ````
 ## Copy files from Windows to RPi
-Example of how to copy the model and text file over to your RPi
+Example of how to copy the model and text file over to your RPi via CMD or Powershell
 ```bash
 scp allskyai_2023-05-07-21-38-44.tflite pi@192.168.1.110:/home/pi/AllSkyAI-RPi/models
 ```
