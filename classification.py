@@ -105,7 +105,7 @@ def do_classification():
     label_path = os.path.join(working_dir, "models", config["LABELS_MAP"])
 
     interpreter = Interpreter(model_path)
-    logger.debug("Model Loaded Successfully.")
+    logging.debug("Model Loaded Successfully.")
 
     interpreter.allocate_tensors()
     _, height, width, _ = interpreter.get_input_details()[0]['shape']
@@ -114,7 +114,7 @@ def do_classification():
     # Load an image to be classified.
     image_path = download_image_from_url(config["ALLSKY_URL"])
     logging.debug(f"Downloading image from: {config['ALLSKY_URL']}")
-    img_array = load_image(width=width, height=height, color_mode="rgb", image_path=image_path)
+    img_array = load_image(width=width, height=height, color_mode=config["COLOR_MODE"], image_path=image_path)
 
     # Classify the image.
     time1 = time.time()
