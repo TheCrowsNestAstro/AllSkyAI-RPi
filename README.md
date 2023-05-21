@@ -25,6 +25,8 @@ nano .env
 Download your trained models from https://www.allskyai.com and place the `*.tflite` and `labels_map*.txt` file in `/models` directory
 Add the file names to the `.env` file and your AllSky URL
 
+`COLOR_MODE` can be either `rgb` or `grayscale` depending on your camera
+
 ## Start the server
 Simply start the server by
 
